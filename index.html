@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - SHAFAF</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #090a0c;
+            --surface-card: #121418;
+            --surface-card-hover: #16181e;
+            --border-card: #1e2229;
+            --border-subtle: #17191e;
+            
+            --text-heading: #f0f3f6;
+            --text-body: #a8b2be;
+            --text-muted: #626d7c;
+            
+            --accent-orange: #ff9500;
+            --accent-orange-dim: rgba(255, 149, 0, 0.12);
+            --accent-orange-border: rgba(255, 149, 0, 0.28);
+            --accent-emerald: #10b981;
+            --accent-emerald-dim: rgba(16, 185, 129, 0.12);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-body);
+            line-height: 1.7;
+            padding: 48px 20px 96px 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        /* Top Brand Bar */
+        .brand-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 36px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .brand-logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        .brand-gem {
+            width: 24px;
+            height: 24px;
+            border-radius: 7px;
+            background: linear-gradient(135deg, #ff9500 0%, #e07a00 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(255, 149, 0, 0.25);
+        }
+
+        .brand-gem-inner {
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+            background: #ffffff;
+            opacity: 0.9;
+        }
+
+        .brand-title {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            color: #ffffff;
+            text-transform: uppercase;
+        }
+
+        .brand-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            background: var(--accent-emerald-dim);
+            border: 1px solid rgba(16, 185, 129, 0.25);
+            border-radius: 999px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent-emerald);
+        }
+
+        .status-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-emerald);
+        }
+
+        /* Main Hero Header */
+        header {
+            margin-bottom: 36px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 15px;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .effective-date {
+            font-size: 13px;
+            color: var(--accent-orange);
+            font-weight: 600;
+        }
+
+        /* Overview Highlight Card */
+        .highlight-banner {
+            background: var(--accent-orange-dim);
+            border: 1px solid var(--accent-orange-border);
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin-bottom: 32px;
+            color: #f5f6f8;
+            font-size: 14.5px;
+            display: flex;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .highlight-icon {
+            color: var(--accent-orange);
+            font-size: 18px;
+            line-height: 1.4;
+            flex-shrink: 0;
+        }
+
+        /* Content Sections inside Elegant Cards */
+        .content-card {
+            background: var(--surface-card);
+            border: 1px solid var(--border-card);
+            border-radius: 16px;
+            padding: 28px 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: "";
+            width: 3px;
+            height: 16px;
+            border-radius: 2px;
+            background: var(--accent-orange);
+            display: inline-block;
+        }
+
+        p {
+            font-size: 14.5px;
+            color: var(--text-body);
+            margin-bottom: 12px;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        strong {
+            color: #f0f3f6;
+            font-weight: 600;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 12px;
+            margin-bottom: 8px;
+        }
+
+        li {
+            font-size: 14.5px;
+            color: var(--text-body);
+            margin-bottom: 14px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-orange);
+            font-size: 18px;
+            position: absolute;
+            left: 2px;
+            top: -2px;
+        }
+
+        a {
+            color: var(--accent-orange);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #ffa726;
+            border-bottom-color: var(--accent-orange);
+        }
+
+        /* Developer & Contact Footer Card */
+        footer {
+            margin-top: 48px;
+            background: var(--surface-card);
+            border: 1px solid var(--border-card);
+            border-radius: 18px;
+            padding: 32px 28px;
+            text-align: center;
+        }
+
+        .footer-tag {
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--accent-orange);
+            margin-bottom: 6px;
+        }
+
+        .footer-author {
+            font-size: 18px;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+
+        .footer-org {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 22px;
+        }
+
+        .social-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 22px;
+        }
+
+        .social-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--border-card);
+            border-radius: 10px;
+            color: #d1d7de;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .social-chip:hover {
+            background: var(--accent-orange-dim);
+            border-color: var(--accent-orange-border);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        .social-chip svg {
+            width: 15px;
+            height: 15px;
+            fill: currentColor;
+        }
+
+        .contact-line {
+            font-size: 13.5px;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        .contact-line a {
+            color: #f0f3f6;
+        }
+
+        .copyright-line {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 14px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 32px 16px 64px 16px;
+            }
+            .content-card {
+                padding: 22px 20px;
+            }
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Brand Bar -->
+        <div class="brand-bar">
+            <div class="brand-logo">
+                <div class="brand-gem">
+                    <div class="brand-gem-inner"></div>
+                </div>
+                <span class="brand-title">SHAFAF</span>
+            </div>
+            <div class="brand-status">
+                <span class="status-dot"></span>
+                <span>Offline-First</span>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <header>
+            <h1>Privacy Policy</h1>
+            <div class="subtitle">SHAFAF Android Application &amp; Home Screen Widgets</div>
+            <div class="effective-date">Effective Date: October 1, 2026</div>
+        </header>
+
+        <!-- Zero Data Highlight -->
+        <div class="highlight-banner">
+            <span class="highlight-icon">✦</span>
+            <div>
+                <strong>Zero Personal Data Tracking:</strong> SHAFAF does not collect, transmit, store, or sell any personally identifiable information. All astronomical prayer schedules and widgets run completely offline on your device.
+            </div>
+        </div>
+
+        <!-- Section: Introduction -->
+        <div class="content-card">
+            <h2>Introduction</h2>
+            <p>This Privacy Policy describes how <strong>SHAFAF</strong> handles information. The application is developed by <strong>Hassan Karim (HNexTech)</strong>.</p>
+            <p>The app is built to work fully offline. You do not need to create an account, log in, or provide any personal details (such as your name, email address, or phone number) to use SHAFAF or its widgets.</p>
+        </div>
+
+        <!-- Section: Device Permissions -->
+        <div class="content-card">
+            <h2>Device Permissions</h2>
+            <p>To provide core widget and Islamic prayer schedule functionality, the app may request the following permissions:</p>
+            <ul>
+                <li><strong>Location (Fine / Coarse GPS):</strong> Used locally on your device to calculate astronomical prayer times and determine the Qibla direction. When you view local weather or search for nearby mosques, anonymous geographic coordinates are transmitted strictly as transient query parameters to standard public weather (Open-Meteo) and mapping (OpenStreetMap Overpass) APIs to fetch local results. Your coordinates are never linked to personal identifiers, never logged on external servers, and never sold. You can also manually choose an offline city without granting location access.</li>
+                <li><strong>Schedule Exact Alarm:</strong> Required by Android to ensure home screen widgets and time calculations update accurately at astronomical prayer transitions.</li>
+                <li><strong>Foreground Service (Special Use):</strong> Required exclusively to synchronize live home screen widgets and countdown timers while active. It does not perform persistent tracking and suspends when inactive to preserve battery life.</li>
+            </ul>
+        </div>
+
+        <!-- Section: Data Storage -->
+        <div class="content-card">
+            <h2>Data Storage</h2>
+            <p>All user preferences (such as prayer calculation method, Hijri date adjustments, widget themes, and colors) are saved locally on your device storage. Clearing the app data or uninstalling the app permanently deletes all saved settings.</p>
+        </div>
+
+        <!-- Section: Third-Party Services -->
+        <div class="content-card">
+            <h2>Third-Party Services</h2>
+            <p>The app does not use advertising networks, behavioral analytics frameworks, or user tracking SDKs. To deliver external utility features, SHAFAF queries the following public APIs:</p>
+            <ul>
+                <li><strong>Open-Meteo:</strong> Provides local weather forecasts. Coordinates are used solely as anonymous query parameters and are governed by <a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener noreferrer">Open-Meteo Terms &amp; Privacy</a>.</li>
+                <li><strong>OpenStreetMap (Overpass API):</strong> Powers nearby mosque discovery based on geographical bounding boxes. Governed by the <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener noreferrer">OpenStreetMap Privacy Policy</a>.</li>
+                <li><strong>Google Play Services:</strong> Provides standard app distribution, integrity checks, and update delivery in accordance with the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>.</li>
+            </ul>
+        </div>
+
+        <!-- Section: Children's Privacy -->
+        <div class="content-card">
+            <h2>Children's Privacy</h2>
+            <p>SHAFAF does not collect personal data from any user, including children under the age of 13.</p>
+        </div>
+
+        <!-- Section: Changes -->
+        <div class="content-card">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any updates will be published on this page with an updated effective date.</p>
+        </div>
+
+        <!-- Developer & Contact Footer -->
+        <footer>
+            <div class="footer-tag">DEVELOPED BY</div>
+            <div class="footer-author">Hassan Karim</div>
+            <div class="footer-org">HNexTech</div>
+
+            <div class="social-row">
+                <!-- Instagram -->
+                <a href="https://instagram.com/HNexTech" target="_blank" rel="noopener noreferrer" class="social-chip" title="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <span>Instagram</span>
+                </a>
+
+                <!-- YouTube -->
+                <a href="https://youtube.com/@HNexTech" target="_blank" rel="noopener noreferrer" class="social-chip" title="YouTube">
+                    <svg viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    <span>YouTube</span>
+                </a>
+
+                <!-- X -->
+                <a href="https://x.com/ha55an_karim" target="_blank" rel="noopener noreferrer" class="social-chip" title="X">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    <span>X</span>
+                </a>
+            </div>
+
+            <div class="contact-line">
+                Inquiries: <a href="mailto:hnextech@outlook.com">hnextech@outlook.com</a>
+            </div>
+            <div class="copyright-line">
+                &copy; 2026 HNexTech. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
